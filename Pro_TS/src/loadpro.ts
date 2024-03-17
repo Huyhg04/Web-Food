@@ -1,50 +1,64 @@
-interface Category {
+interface Product {
+    _id: string;
+    ma: string;
     name: string;
-    items: string[];
+    image: string;
+    price_now: number;
+    price_sale: number;
+    quantity: number;
+    category_id: string;
+    created_at: string;
+    updated_at: string;
 }
 
-async function fetchDataCategory(isAdminPage: boolean, targetElementId: string): Promise<void> {
+async function fetchDataProduct(targetElementId: string): Promise<void> {
     try {
-        const response = await fetch('http://localhost:3000/categories');
+        const response = await fetch('http://localhost:3000/products');
+
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        const categories: Category[] = await response.json();
 
-        if (isAdminPage) {
-            // displayCategoryAdminData(categories, targetElementId); // Bạn không có hàm này, có thể là displayCategoryClientData?
-            displayCategoryClientData(categories, targetElementId);
-        } else {
-            displayCategoryClientData(categories, targetElementId);
-        }
+        const data: Product[] = await response.json();
+        displayProductClientData(data, targetElementId);
 
     } catch (error) {
-        console.error('Error fetching categories:', error);
+        console.error('Error fetching product data:', error);
     }
 }
 
-function displayCategoryClientData(categories: Category[], targetElementId: string): void {
-    const categoryListContainer = document.querySelector(targetElementId);
-    if (!categoryListContainer) return;
 
-    // Xóa nội dung cũ của targetElementId trước khi cập nhật
-    categoryListContainer.innerHTML = '';
+function displayProductClientData(data: Product[], targetElementId: string): void {
+    const targetElement = document.getElementById(targetElementId);
+    if (!targetElement) return;
 
-    // Lặp qua mỗi danh mục và tạo HTML tương ứng
-    categories.forEach(category => {
-        const menuListItem = document.createElement('div');
-        menuListItem.classList.add('menu-item');
-        menuListItem.innerHTML = `
-            <div class="title-menu">
-                <a href="#">${category.name}</a>
-            </div>
-            <ul class="sub-menu">
-                ${category.items.map(item => `<li><a href="#">${item}</a></li>`).join('')}
-            </ul>
-        `;
-        categoryListContainer.appendChild(menuListItem);
+    let str = '';
+
+    data.forEach(item => {
+        const obj = JSON.stringify(item);
+        str += `
+            <div class="col-md-2">
+                <div class="card border-success-subtle noi-bat">
+                    <div class="card__img">
+                        <a href="#"><img src="/asset/img/${item.image}" alt=""></a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="">${item.name}</a></h5>
+                        <p class="card-price">
+                            <span class="price-cost">${item.price_now}</span>
+                            <span class="price-sale">${item.price_sale}</span>
+                        </p>
+                        <button class="btn-card_buy" onclick='addCart(${obj})'>Mua Ngay</button>
+                        <button class="btn-card_view" onclick='showDetail(${obj})'>Xem</button>
+                    </div>
+                </div>
+            </div>`;
     });
+
+    // Đặt HTML được tạo ra vào phần tử mục tiêu
+    targetElement.innerHTML = str;
 }
 
-// Gọi hàm fetchDataCategory để lấy dữ liệu từ API và cập nhật HTML tương ứng
-fetchDataCategory(false, '.menu-list');
+// Gọi fetchDataProduct để lấy dữ liệu từ API và cập nhật HTML tương ứng
+fetchDataProduct('productHot');
+fetchDataProduct('productNew');
