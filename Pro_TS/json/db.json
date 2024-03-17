@@ -1,0 +1,110 @@
+{
+  "orders": [],
+  "users": [
+    {
+      "name": "Huỳnh Gia Huy",
+      "email": "giahuy@gmail.com",
+      "address": "Bến Tre",
+      "username": "giahuy@123",
+      "password": "giahuy123",
+      "role": "User",
+      "id": "62da"
+    },
+    {
+      "name": "Huỳnh Gia Huy",
+      "email": "huy@gmail.com",
+      "address": "Bến Tre",
+      "username": "giahuy@123",
+      "password": "123",
+      "role": "User",
+      "id": "516b"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Trái cây",
+      "items": [
+        "Dưa lưới",
+        "Dâu tây",
+        "Ổi xanh",
+        "Nho tím không hạt"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Rau củ",
+      "items": [
+        "Rau cải",
+        "Khoai",
+        "Tỏi",
+        "Hành"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Thịt",
+      "items": [
+        "Thịt heo",
+        "Thịt bò",
+        "Thịt cừu-bê",
+        "Thịt gà-vịt",
+        "Thịt xay-cắt lát"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Thực phẩm khô",
+      "items": [
+        "Khô bò",
+        "Khô heo",
+        "Khô cá",
+        "Khô mực"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Bánh ngọt",
+      "items": [
+        "Bánh quy",
+        "Bánh mặn",
+        "Bánh nhập khẩu",
+        "Bánh nội địa"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "ma": "SP984374",
+      "tenSP": "Bí đỏ",
+      "imgSP": "sp7.png",
+      "priceSP": "55000",
+      "brand": "Trái cây",
+      "id": "15f1"
+    },
+    {
+      "ma": "SP008",
+      "tenSP": "Bí xanh",
+      "imgSP": "sp8.png",
+      "priceSP": "55000",
+      "brand": "Rau củ",
+      "id": "8e7f"
+    },
+    {
+      "ma": "SP980703",
+      "tenSP": "Dâu tây",
+      "imgSP": "sp2.png",
+      "priceSP": "55000",
+      "brand": "Trái cây",
+      "id": "39a6"
+    },
+    {
+      "id": "358e",
+      "ma": "SP883195",
+      "tenSP": "ass",
+      "imgSP": "logo_vegetable.png",
+      "priceSP": "444444",
+      "brand": "Thịt"
+    }
+  ]
+}

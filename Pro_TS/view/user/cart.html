@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link style.css  -->
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <!-- link Icon-Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font-text  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <!-- link CSS bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<!-- header  -->
+<header class="container" style="height: auto;">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="/asset/img/logo_vegetable.png" alt="Logo" style="width: 100%; height: 70px;">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item d-flex justify-content-center" style="width: 120px;">
+                  <a class="nav-link" href="#">Sản phẩm 
+                    <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i>
+                  </a>
+                  <div class="menu-list-container">
+                     <div class="menu-list">
+                    <div class="menu-item">
+                        <div class="title-menu">
+                            <a href="#">TRÁI CÂY</a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Dưa lưới</a></li>
+                            <li><a href="#">Dâu tây</a></li>
+                            <li><a href="#">Ổi xanh</a></li>
+                            <li><a href="#">Nho tím không hạt</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="title-menu">
+                            <a href="#">RAU CỦ</a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Rau cải</a></li>
+                            <li><a href="#">Khoai</a></li>
+                            <li><a href="#">Tỏi</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="title-menu">
+                            <a href="#">THỊT</a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Thịt heo</a></li>
+                            <li><a href="#">Thịt bò</a></li>
+                            <li><a href="#">Thịt cừu-Bê</a></li>
+                            <li><a href="#">Thịt gà - vịt</a></li>
+                            <li><a href="#">Thịt xay - cắt lát</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="title-menu">
+                            <a href="#">THỰC PHẨM KHÔ</a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Khô bò</a></li>
+                            <li><a href="#">Khô heo</a></li>
+                            <li><a href="#">Khô cá</a></li>
+                            <li><a href="#">Mực khô</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="title-menu">
+                            <a href="#">BÁNH NGỌT</a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Bánh quy</a></li>
+                            <li><a href="#">Bánh mặn</a></li>
+                            <li><a href="#">Bánh nhập khẩu</a></li>
+                            <li><a href="#">Bánh nội địa</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  </div>
+                 
+                </li>
+                <li class="nav-item d-flex justify-content-center" style="width: 120px;">
+                  <a class="nav-link" href="news.html">Blog 
+                    <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i>
+                  </a>
+                </li>               
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-user fa-xl"></i></a>
+                </li>
+                <li class="nav-item cart-hover">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                  <span class="count-item">0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+</header>
+
+<!-- main  -->
+<div class="container">
+  <div class="row">
+        <h5 class="title-pro"><span>Giỏ Hàng</span></h5>
+      <div class="col-md-9">
+          <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th>Tên sản phẩm</th>
+                      <th>Sô lượng</th>
+                      <th class="text-center">Giá</th>
+                      <th class="text-center">Tổng</th>
+                      <th> </th>
+                  </tr>
+              </thead>
+              <tbody id="cart">
+                 
+              </tbody>
+          </table>
+      </div>
+      <div class="col-md-3">
+          <table class="table">
+              <tbody id="cart">
+                <tr>
+                  <td colspan="4"><h5 class="fs-6">Tạm tính:</h5></td>
+                  <td class="text-right"><span id="cart-total"></span></td>
+              </tr>
+              <tr>
+                  <td  colspan="4"><h5 class="fs-6">Phí vận chuyển:</h5></td>
+                  <td class="text-right"><span id="shipping-fee"></span></td>
+              </tr>
+              <tr>
+                  <td colspan="4"><h3 class="fs-6">Tổng công:</h3></td>
+                  <td class="text-right"><span id="grand-total"></span></td>
+              </tr>
+              <tr>
+                  <td  colspan="4">
+                  <button type="button" class=" btn-card_view">
+                      <span class="glyphicon glyphicon-shopping-cart "></span> Quay lại
+                  </button></td>
+                  <td>
+                    <a href="checkout.html" style="text-decoration: none;">
+                      <button type="button" class="btn-card_buy">
+                      Thanh toán
+                      </button>
+                    </a> 
+                  </td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+<!-- footer  -->
+<footer class="container-fluid mt-5" style="background-color: #f8f8f8;">
+    <div class="container" style="padding: 45px 0px;">
+      <div class="row d-flex justify-content-between">
+      <div class="col-md-4">
+        <ul class="footer-list">
+          <h4 class="footer-title">Giới Thiệu</h4>
+          <li><a href="">Thực phẩm Organic Wandave chuyên cung cấp các thực phẩm tươi sạch, giá cả phải chăng. Đạt tiêu chuẩn chất lượng</a></li>
+          <li><a href=""><i class="fa-solid fa-location-dot"></i> 59A Âu cơ, Phường 14, Quận 11, TP. HCM</a></li>
+          <li><a href=""><i class="fa-solid fa-phone"></i> 0385942049</a></li>
+          <li><a href=""><i class="fa-solid fa-envelope"></i> Gwandave@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="footer-list">
+          <h4 class="footer-title">Liên Kết</h4>
+          <li><a href="">Tìm kiếm</a></li>
+          <li><a href="">Giới thiệu</a></li>
+          <li><a href="">Liên hệ</a></li>
+          <li><a href="">Hệ thống cửa hàng</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="footer-list">
+          <h4 class="footer-title">Chính sách</h4>
+          <li><a href="">Chính sách thanh toán</a></li>
+          <li><a href="">Chính sách đổi trả</a></li>
+          <li><a href="">Chính sách bảo mật</li>
+          <li><a href="">Điều khoản sử dụng</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="footer-list">
+          <h4 class="footer-title">Đăng ký nhận ưu đãi</h4>
+          <li><a href="">Hãy là người đầu tiên nhận khuyến mãi lớn</a></li>
+          <li><form class="d-flex gap-2">
+            <input type="text" placeholder="Email" class="form-control" style="width: 250px;">
+            <input type="button" value="Đăng ký" class="btn" style="background-color: #53a716; color: white;">
+          </form></li>
+          <li class="social">
+            <a href=""><img src="/asset/img/icon-social-1.webp" alt=""></a>
+            <a href=""><img src="/asset/img/icon-social-2.webp" alt=""></a>
+            <a href=""><img src="/asset/img/icon-social-3.webp" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </footer>
+<!-- js xử lí cart  -->
+<script>
+    let soluong = localStorage.getItem("totalQty");
+    let arrCart = JSON.parse(localStorage.getItem("myCart"));
+    document.querySelector('.count-item').innerText = soluong;
+    let data = "";
+    const VND = new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND',
+    });
+  
+    var cartContent = document.getElementById('cart');
+    var cartTotal = document.getElementById('cart-total');
+    var totalAll = 0;
+  
+    cartContent.innerHTML = '';
+    if (arrCart && arrCart.length > 0) {
+        arrCart.forEach(item => {
+            var total = item.sp.priceSP * item.qty;
+            totalAll += total;
+            cartContent.innerHTML += `
+                <tr>
+                    <td class="col-sm-8 col-md-6">
+                        <div class="media d-flex ">
+                            <img class="media-object" src="/asset/img/${item.sp.imgSP}" style="width: 72px; height: 72px;">
+                            <div class="media-body">
+                                <h4 class="media-heading__top">${item.sp.tenSP}</h4>
+                                <h5 class="media-heading__bottom">${item.sp.brand}</h5>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="${item.qty}">
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">${VND.format(item.sp.priceSP)}</td>
+                    <td class="col-sm-1 col-md-1 text-center"><strong>${VND.format(total)}</strong></td>
+                    <td class="col-sm-1 col-md-1">
+                      <button type="button" class="btn btn-danger remove-btn" onclick='removeItem("${item.sp.ma}")'>
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                </tr>
+            `;
+        });
+    } else {
+        cartContent.innerHTML = `
+            <tr>
+                <td colspan="5" class="text-center">Giỏ hàng trống</td>
+            </tr>
+        `;
+    }
+  
+    cartTotal.innerHTML = `${VND.format(totalAll)}`;
+  
+    let shippingFee = 20000;
+    if (totalAll >= 200000) {
+        shippingFee = 0;
+    }
+  
+    let grandTotal = totalAll + shippingFee;
+  
+    document.getElementById('shipping-fee').innerText = `${VND.format(shippingFee)}`;
+    document.getElementById('grand-total').innerText = `${VND.format(grandTotal)}`;
+  
+    // Lưu giá tổng vào localStorage
+    localStorage.setItem("grandTotal", grandTotal);
+  
+    function removeItem(maSP) {
+      arrCart = arrCart.filter(item => item.sp.ma !== maSP);
+  
+      // Cập nhật tổng số lượng sản phẩm
+      soluong = arrCart.reduce((total, item) => total + item.qty, 0);
+  
+      // Cập nhật hiển thị số lượng sản phẩm trong giỏ hàng
+      document.querySelector('.count-item').innerText = soluong;
+  
+      // Cập nhật giá trị trong localStorage
+      localStorage.setItem("totalQty", soluong + "");
+      localStorage.setItem("myCart", JSON.stringify(arrCart));
+  
+      // Lưu lại giá tổng mới vào localStorage
+      localStorage.setItem("grandTotal", totalAll);
+  
+      // Tải lại trang
+      location.reload();
+    }
+  
+</script>
