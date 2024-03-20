@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 
 interface Product {
     _id: string;
@@ -14,8 +14,8 @@ interface Product {
 
 async function loadProducts(targetElementId: string): Promise<void> {
     try {
-        const response = await axios.get('http://localhost:3000/products');
-        const data: Product[] = response.data;
+        const response = await fetch('http://localhost:3000/products');
+        const data  =await response.json() as  Product[];
 
         const targetElement = document.getElementById(targetElementId);
         if (!targetElement) return;

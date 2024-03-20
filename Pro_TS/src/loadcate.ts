@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 
 interface Category {
     _id: string;
@@ -8,8 +8,8 @@ interface Category {
 
 async function loadCate(targetElementId: string): Promise<void> {
     try {
-        const response = await axios.get('http://localhost:3000/categories');
-        const data: Category[] = await response.data;
+        const response = await fetch('http://localhost:3000/categories');
+        const data: Category[] = await response.json();
 
         const categoryList = document.querySelector(targetElementId);
         if(!categoryList) return;
@@ -24,7 +24,7 @@ async function loadCate(targetElementId: string): Promise<void> {
             <div class="title-menu">
                 <a href="#">${cate.name}</a>
             </div>
-            <ul>
+            <ul class="sub-menu">
                 ${cate.items.map(item => `<li><a href="#">${item}</a></li>`).join('')}
             </ul>
             `;
