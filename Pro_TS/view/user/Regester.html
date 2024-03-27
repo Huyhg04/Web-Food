@@ -107,15 +107,16 @@
             <div class="logo-container">
                 Đăng ký
             </div>
-            <form class="form">
+            <form id="loginForm" class="formRegester">
                 <div class="form-group">
-                    <label for="userName">Nhập Email</label>
-                    <input type="text" id="userName" name="userName" placeholder="Enter your userName" required="">
+                    <label for="email">Nhập Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
+                        required>
                     <label for="passWord">Nhập Password</label>
-                    <input type="text" id="passWord" name="passWord" placeholder="Enter your passWord" required="">
+                    <input type="password" id="passWord" name="passWord" placeholder="Enter your password"
+                        autocomplete="current-password" required>
                 </div>
-
-                <button class="form-submit-btn" type="submit" onclick="submitUser()">Đăng ký</button>
+                <button class="form-submit-btn" type="submit">Đăng ký</button>
             </form>
 
             <p class="signup-link">
@@ -192,6 +193,7 @@
     <!-- Link Js asset  -->
     <script src="/asset/js/loadcate.js"></script>
     <script src="/asset/js/loadpro.js"></script>
+    <script type="module" src="/asset/js/login.js"></script>
 </body>
 
 </html>

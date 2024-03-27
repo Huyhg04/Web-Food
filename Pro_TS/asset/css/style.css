@@ -160,6 +160,10 @@ header {
   height: 100px;
   /* background-color: aqua; */
 }
+.nameLogin {
+  margin-left: 5px;
+  font-size: 16px;
+}
 .navbar-nav .nav-item.active a {
   color: #53a716;
   font-size: 16px;

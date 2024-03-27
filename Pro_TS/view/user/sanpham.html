@@ -99,37 +99,8 @@
             <div class="box-sidebar">
                 <h3 class="title">Danh mục sản phẩm</h3>
                 <div class="category">
-                    <ul class="scrollbar-item">
-                        <li class="item">
-                            <a href="" class="custcheck">
-                                <span class="name-check">Trái cây</span>
-                                <span class="count-check">(4)</span>
-                            </a>
-                        </li>                        
-                        <li class="item">
-                            <a href="" class="custcheck">
-                                <span class="name-check">Trái cây</span>
-                                <span class="count-check">(4)</span>
-                            </a>
-                        </li>                        
-                        <li class="item">
-                            <a href="" class="custcheck">
-                                <span class="name-check">Trái cây</span>
-                                <span class="count-check">(4)</span>
-                            </a>
-                        </li>                        
-                        <li class="item">
-                            <a href="" class="custcheck">
-                                <span class="name-check">Trái cây</span>
-                                <span class="count-check">(4)</span>
-                            </a>
-                        </li>                        
-                        <li class="item">
-                            <a href="" class="custcheck">
-                                <span class="name-check">Trái cây</span>
-                                <span class="count-check">(4)</span>
-                            </a>
-                        </li>                        
+                    <ul class="scrollbar-item" id="menu-side">
+                                                
                     </ul>
                 </div>
             </div>
@@ -231,85 +202,72 @@
                 </div>
             </div>
             <div class="container">
-                <h2 class="text-uppercase text-center">SẢN PHẨM BÁN CHẠY</h2>
-                <div class="row d-flex ">
-                  <!-- Sản phẩm 1 -->
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="asset/img/sp1.webp" class="card-img-top" alt="Product 1">
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Bắp mỹ</h5>
-                        <p class="card-price">
-                          <span class="price-cost">55.000đ</span>
-                          <span class="price-sale"></span>
-                        </p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                        <a href="#" class="btn btn-primary">Xem</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Sản phẩm 1 -->
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="asset/img/sp1.webp" class="card-img-top" alt="Product 1">
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Bắp mỹ</h5>
-                        <p class="card-price">
-                          <span class="price-cost">55.000đ</span>
-                          <span class="price-sale"></span>
-                        </p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                        <a href="#" class="btn btn-primary">Xem</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Sản phẩm 1 -->
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="asset/img/sp1.webp" class="card-img-top" alt="Product 1">
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Bắp mỹ</h5>
-                        <p class="card-price">
-                          <span class="price-cost">55.000đ</span>
-                          <span class="price-sale"></span>
-                        </p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                        <a href="#" class="btn btn-primary">Xem</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Sản phẩm 1 -->
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="asset/img/sp1.webp" class="card-img-top" alt="Product 1">
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Bắp mỹ</h5>
-                        <p class="card-price">
-                          <span class="price-cost">55.000đ</span>
-                          <span class="price-sale"></span>
-                        </p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                        <a href="#" class="btn btn-primary">Xem</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Sản phẩm 1 -->
-                  <div class="col-md-3">
-                    <div class="card">
-                      <img src="asset/img/sp1.webp" class="card-img-top" alt="Product 1">
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Bắp mỹ</h5>
-                        <p class="card-price">
-                          <span class="price-cost">55.000đ</span>
-                          <span class="price-sale"></span>
-                        </p>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                        <a href="#" class="btn btn-primary">Xem</a>
-                      </div>
-                    </div>
-                  </div>
+                <!-- <h2 class="text-uppercase text-center">SẢN PHẨM BÁN CHẠY</h2> -->
+                <div class="row d-flex justify-content-sm-start flex-wrap" id="productListCate">
+                
                 </div>
               </div>
         </div>
     </div>
 </main>
+
+<!-- footer  -->
+<footer class="container-fluid mt-5" style="background-color: #f8f8f8;">
+  <div class="container" style="padding: 45px 0px;">
+    <div class="row d-flex justify-content-between">
+    <div class="col-md-4">
+      <ul class="footer-list">
+        <h4 class="footer-title">Giới Thiệu</h4>
+        <li><a href="">Thực phẩm Organic Wandave chuyên cung cấp các thực phẩm tươi sạch, giá cả phải chăng. Đạt tiêu chuẩn chất lượng</a></li>
+        <li><a href=""><i class="fa-solid fa-location-dot"></i> 59A Âu cơ, Phường 14, Quận 11, TP. HCM</a></li>
+        <li><a href=""><i class="fa-solid fa-phone"></i> 0385942049</a></li>
+        <li><a href=""><i class="fa-solid fa-envelope"></i> Gwandave@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul class="footer-list">
+        <h4 class="footer-title">Liên Kết</h4>
+        <li><a href="">Tìm kiếm</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Hệ thống cửa hàng</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul class="footer-list">
+        <h4 class="footer-title">Chính sách</h4>
+        <li><a href="">Chính sách thanh toán</a></li>
+        <li><a href="">Chính sách đổi trả</a></li>
+        <li><a href="">Chính sách bảo mật</li>
+        <li><a href="">Điều khoản sử dụng</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="footer-list">
+        <h4 class="footer-title">Đăng ký nhận ưu đãi</h4>
+        <li><a href="">Hãy là người đầu tiên nhận khuyến mãi lớn</a></li>
+        <li><form class="d-flex gap-2">
+          <input type="text" placeholder="Email" class="form-control" style="width: 250px;">
+          <input type="button" value="Đăng ký" class="btn" style="background-color: #53a716; color: white;">
+        </form></li>
+        <li class="social">
+          <a href=""><img src="/asset/img/icon-social-1.webp" alt=""></a>
+          <a href=""><img src="/asset/img/icon-social-2.webp" alt=""></a>
+          <a href=""><img src="/asset/img/icon-social-3.webp" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</footer>
+
+
+<!-- link JS bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Thư viện jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Link Js asset  -->
+<script src="/asset/js/loadcate.js"></script>
+<script src="/asset/js/loadpro.js"></script>
+</body>
+</html>
